@@ -33,7 +33,7 @@
                         <ul class="pagination justify-content-end">
                             <li class="page-item"><a class="page-link" href="/medlogin.html">Ingresar</a></li>
                             <li>&nbsp;&nbsp;</li>
-                            <li class="page-item active"><span class="page-link">Registrarse</span></li>                  
+                            <li class="page-item"><a class="page-link" href="/medre.html">Registrarse</a></li>            
                         </ul>
                     </nav>
                 </div>
@@ -74,7 +74,9 @@
                                 <div class="mb-2" style="font-size: smaller;">Foto de perfil</div>
                                 <!--Preguntar como darle un máximo tamaño a la img. responsive-->
                                 <div class="mb-2"><img src="/Photos/default-avatar.png" class="img-fluid"/></div>
-                                <div><button type="button" class="btn btn-outline-info" style="font-size: x-small;">Cambiar</button></div>
+                                <div>                                    
+                                    <input class="form-control form-control-sm" id="formFileSm" type="file" accept="image/*">
+                                </div>                                
                             </div>
                         </div>
                         <div><a href="#" class="btn btn-link" style="font-size: small;">Cambiar mi dirección de correo</a></div>
@@ -98,110 +100,22 @@
                         <!--registrar/modificar los días de la semana y horas 
                             donde podrá atender de manera presencial o virtual-->                        
                         <div class="container">
-                            <div>
+                            <div class="row">
                                 <table class="table align-middle">
                                     <thead>
-                                      <tr>
-                                        <th scope="col">N°</th>
-                                        <th scope="col">Día</th>
-                                        <th scope="col" class="text-center">Horarios</th>                                    
-                                      </tr>
+                                        <tr>
+                                            <th scope="col">N°</th>
+                                            <th scope="col">Día</th>
+                                            <th scope="col" >Horas</th>
+                                            <th scope="col">Acción</th>                               
+                                        </tr>
                                     </thead>
-                                    <tbody>
-                                      <tr>
-                                        <th scope="row">1</th>
-                                        <td>Lunes</td>
-                                        <td>
-                                            <div id="ig1" class="input-group">
-                                                <input type="text" class="form-control" value="Sin horario" readonly/>
-                                                <button id="but1" type="button" class="btn btn-success" hidden>ok</button>
-                                                <button id="butt1" type="button" class="btn btn-warning" hidden>ok</button>
-                                            </div>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">2</th>
-                                        <td>Martes</td>
-                                        <td>
-                                            <div id="ig2" class="input-group">
-                                                <input type="text" class="form-control" value="Sin horario" readonly/>                                                
-                                                <button id="but2" type="button" class="btn btn-success" hidden>ok</button>
-                                                <button id="butt2" type="button" class="btn btn-warning" hidden>ok</button>
-                                            </div>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">3</th>
-                                        <td>Miércoles</td>
-                                        <td>
-                                            <div id="ig3" class="input-group">
-                                                <input type="text" class="form-control" value="Sin horario" readonly/>      
-                                                <button id="but3" type="button" class="btn btn-success" hidden>ok</button>
-                                                <button id="butt3" type="button" class="btn btn-warning" hidden>ok</button>
-                                            </div>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">4</th>
-                                        <td>Jueves</td>
-                                        <td>
-                                            <div id="ig4" class="input-group">
-                                                <input type="text" class="form-control" value="Sin horario" readonly/>                                                
-                                                <button id="but4" type="button" class="btn btn-success" hidden>ok</button>
-                                                <button id="butt4" type="button" class="btn btn-warning" hidden>ok</button>
-                                            </div>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">5</th>
-                                        <td>Viernes</td>
-                                        <td>
-                                            <div id="ig5" class="input-group">
-                                                <input type="text" class="form-control" value="Sin horario" readonly/>                                                
-                                                <button id="but5" type="button" class="btn btn-success" hidden>ok</button>
-                                                <button id="butt5" type="button" class="btn btn-warning" hidden>ok</button>
-                                            </div>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">6</th>
-                                        <td>Sábado</td>
-                                        <td>
-                                            <div id="ig6" class="input-group">
-                                                <input type="text" class="form-control" value="Sin horario" readonly/>                                                
-                                                <button id="but6" type="button" class="btn btn-success" hidden>ok</button>
-                                                <button id="butt6" type="button" class="btn btn-warning" hidden>ok</button>
-                                            </div>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">7</th>
-                                        <td>Domingo</td>
-                                        <td>
-                                            <div id="ig7" class="input-group">
-                                                <input type="text" class="form-control" value="Sin horario" readonly/>                                                
-                                                <button id="but7" type="button" class="btn btn-success" hidden>ok</button>
-                                                <button id="butt7" type="button" class="btn btn-warning" hidden>ok</button>
-                                            </div>
-                                        </td>
-                                      </tr>
+                                    <tbody id="tbody">
+                                                                              
                                     </tbody>
                                   </table>                           
-                            </div>
-                            <div class="row">
-                                <div class="col text-center input-group">
-                                    <button style="width: 75%;" type="button" class="btn btn-outline-success" onclick="agregarHorario()">Nuevo</button>                 
-                                    <input id="inputnuevo" type="text" class="form-control text-center" placeholder="N°"/>
-                                </div>
-                                <div class="col text-center input-group">
-                                    <button style="width: 75%;" type="button" class="btn btn-outline-warning" onclick="cambiarHorario()">Cambiar</button>
-                                    <input id="inputcambiar" type="text" class="form-control text-center indexhorario" placeholder="N°"/>
-                                </div>
-                                <div class="col text-center input-group">
-                                    <button style="width: 75%;" type="button" class="btn btn-outline-danger" onclick="eliminarHorario()">Eliminar</button>
-                                    <input id="inputborrar" type="text" class="form-control text-center indexhorario" placeholder="N°"/>
-                                </div>
-                            </div>
+                            </div>                                                            
+                            <button type="button" class="btn btn-outline-success" onclick="agregarHorario()">&nbsp;&nbsp;Nuevo&nbsp;&nbsp;</button>
                         </div>
                     </div>
                 </div>
