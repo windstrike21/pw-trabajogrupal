@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Login Paciente</title>
+</head>
+<body>
+<!--Contenido principal-->   
+<div class="container mb-3">
+    <h1 class="mt-5 mb-5 text-center">Crea una nueva cuenta</h1>        
+    <div class="row d-flex justify-content-center">
+        <!--Formulario-->          
+        <form class="col-lg-6">
+            <!--Nombres-->  
+            <div>
+                <label class="form-label" for="frm_name">Ingresa tus nombres:</label>
+                <input id="frm_name" class="form-control" placeholder="Juan Pablo" type="text">        
+            </div>
+            <!--Apellidos-->  
+            <div class="mt-3">
+                <label class="form-label" for="frm_last_name">Ingresa tus apellidos:</label>
+                <input id="fmr_last_name" placeholder="Pérez" type="text" class="form-control">        
+            </div>
+            <!--Correo-->  
+            <div class="mt-3">
+                <label class="form-label" for="frm_email">Ingresa tu correo:</label>
+                <input id="frm_email" placeholder="tucorreo@algo.com" type="email" class="form-control">        
+            </div>
+            <!--contraseña-->  
+            <div class="mt-3">
+                <label class="form-label" for="frm_password">Crea tu contraseña:</label>
+            </div>
+            <div class="input-group mb-3">
+                <input id="passwdcheck" placeholder="Min 6 caracteres" type="password" class="form-control">
+                <span class="input-group-text">
+                    <input type="checkbox" class="form-check-input" onclick="cambiarStatusClave()" checked/>&nbsp;<span id="passwdtext" style="opacity: 50%;">oculto</span>
+                </span>                          
+            </div>
+            <!--boton de registro--> 
+            <div class="mb-5 text-center">
+                <button type="button" style="font-size: larger; width: 100%;" class="btn btn-outline-success">REGISTRARSE</button>
+            </div>
+            <div class="d-flex justify-space-between align-items-center mb-5">
+                <hr class="bg-gray-300 w-100 mr-1">
+                <span class="w-100 text-center">o</span>
+                <hr class="bg-gray-300 w-100 ml-1">
+            </div>
+            <div class="card text-center mb-3">Continuar con Facebook</div>
+            <div class="card text-center mb-3">Continuar con Google</div>
+            <div class="card text-center mb-5">Continuar con Apple</div>
+            <div class="mb-5 text-center mb-3" style="font-size:small;">
+                ¿No tienes cuenta? 
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="/medregister.html" class="btn btn-outline-warning">Registrarse</a>                    
+            </div>            
+        </div>
+        
+    </div>
+</div>
+</div>     
+</body>
+</html>
