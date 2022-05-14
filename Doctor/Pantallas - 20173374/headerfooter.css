@@ -7,3 +7,7 @@ body {
 #footer {
     margin-top: auto;
 }
+
+.fs-sm {
+    font-size: small;    
+}

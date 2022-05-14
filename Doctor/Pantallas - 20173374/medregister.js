@@ -1,4 +1,4 @@
-function generatePassword() {
+const generatePassword = function() {
     //Aleatorio entre 8 y 12
     const length = Math.floor(Math.random() * (13 - 8)) + 8, p1 = document.getElementById("passwd1"), p2 = document.getElementById("passwd2")    
         charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#$%&",
@@ -9,13 +9,13 @@ function generatePassword() {
     console.log(retVal)
     p1.value = p2.value = retVal
 }
-function cambiarEstadoPassword() {
+const cambiarEstadoPassword = function() {
     const eye = document.getElementById("passwdcheck"), p1 = document.getElementById("passwd1"), p2 = document.getElementById("passwd2");
     if (p1.type && p2.type === "password") {
       p1.type = p2.type = "text";            
-      eye.removeAttribute("style")      
+      eye.setAttribute("class", "btn btn-secondary")
     } else {
       p1.type = p2.type = "password";
-      eye.setAttribute("style","text-decoration:line-through;")
+      eye.setAttribute("class", "btn btn-secondary eye")
     }
 }
