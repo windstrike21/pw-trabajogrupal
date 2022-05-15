@@ -1,2 +1,2 @@
-Programación Web - Sección 702
-Grupo 3
+- Programación Web - Sección 702
+- Grupo 3
