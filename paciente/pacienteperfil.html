@@ -10,7 +10,7 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-    <title>Editar Datos</title>
+    <title>Perfil Paciente</title>
   </head>
   <body>
     <div class="card">
@@ -40,37 +40,41 @@
     <div>
         <h1 class="row d-flex justify-content-center">Editar Perfil</h1>
     </div>
-    <div class="card-body">
-    <div class="col-4">
-    <!--Nombres-->  
-    <div>
-        <label class="form-label" for="frm_name">Nombres: *</label>
-        <input id="frm_name" class="form-control" placeholder="Juan Pablo" type="text" readonly>        
-    </div>
-    <!--Apellidos-->  
-    <div class="mt-3">
-        <label class="form-label" for="frm_last_name">Apellidos: *</label>
-        <input id="fmr_last_name" placeholder="Pérez Huamán" type="text" class="form-control" readonly>        
-    </div>
-    <!--Correo-->  
-    <div class="mt-3">
-        <label class="form-label" for="frm_email">Correo: *</label>
-        <input id="frm_email" placeholder="tucorreo@algo.com" type="email" class="form-control" readonly>        
-    </div>
-    <!--contraseña-->  
-    <div class="mt-3">
-        <label class="form-label" for="frm_password">Contraseña: *</label>       
-        <input id="passwordcheck" placeholder="*********" type="password" class="form-control"  readonly
-        />                                 
-    </div>
-    
-    </div>
-    <div class="col-4">
-        <label class="form-label" for="frm_last_name">Número de Teléfono": *</label>
-        <input id="fmr_last_name" placeholder="" type="text" class="form-control">        
-    </div>
 
+    <div class="card">
+    <div class="card-body">
+        <div class="row">
+        <div class="col-4">
+        <!--Nombres-->  
+          <div>
+            <label class="form-label" for="frm_name">Nombres: </label>
+            <input id="frm_name" class="form-control" placeholder="Juan Pablo" type="text" readonly>        
+          </div>
+        <!--Apellidos-->  
+         <div class="mt-3">
+           <label class="form-label" for="frm_last_name">Apellidos: </label>
+          <input id="fmr_last_name" placeholder="Pérez Huamán" type="text" class="form-control" readonly>        
+         </div>
+        <!--Correo-->  
+         <div class="mt-3">
+          <label class="form-label" for="frm_email">Correo: </label>
+          <input id="frm_email" placeholder="tucorreo@algo.com" type="email" class="form-control" readonly>        
+         </div>
+        <!--contraseña-->  
+         <div class="mt-3">
+          <label class="form-label" for="frm_password">Contraseña: </label>       
+          <input id="passwordcheck" placeholder="*********" type="password" class="form-control"  readonly>                                 
+         </div>
+    
+        </div>
+            <div class="col-4">
+                <label class="form-label" for="frm_telf">Número de Teléfono: </label>
+                <input id="fmr_telf" placeholder="" type="text" class="form-control">        
+            </div>
+            
+        </div>
     </div>
+  </div>
 </div>
 
   </body>
