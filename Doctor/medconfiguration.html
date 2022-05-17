@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/headerfooter.css" type="text/css" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="/headerfooter.css" type="text/css" rel="stylesheet"/>
     <title>Configuración de la cuenta</title>
 </head>
 <body>
@@ -15,25 +15,23 @@
         <div class="card-header border-0">
             <div class="row mt-2">
                 <div class="col-1 text-center"> 
-                    <a href="/indexlogin.html">
+                    <a href="/indexlogeado.html">
                         <img src="/Photos/Logo3.png" width="35" height="35"/>
                     </a>
                 </div>
-                <div class="col-6 fs-sm">
-                    <nav aria-label="...">
-                        <ul class="pagination">
-                            <li class="page-item"><a class="page-link" href="/indexlogin.html">Inicio</a></li>
-                            <li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                            <li class="page-item"><a class="page-link" href="#">Acerca</a></li>
-                            <li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                            <li class="page-item"><a class="page-link" href="#">Contacto</a></li>                      
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col-5 fs-sm">            
+                <div class="col-2">
+                    <a href="/indexlogeado.html">
+                      <button type="button" class="btn btn-light border btn-lg">Home</button>
+                    </a>
+                  </div>
+                <div class="col-9 fs-sm">            
                     <nav aria-label="...">
                         <ul class="pagination justify-content-end">
-                            <li class="page-item">Cuenta</li>
+                            <li class="page-item"><a class="page-link" href="/medprogramation.html">Programación de citas</a></li>
+                            <li>&nbsp;&nbsp;</li>
+                            <li class="page-item active"><span class="page-link">Configuración de la cuenta</span></li>                  
+                            <li>&nbsp;&nbsp;</li>
+                            <li class="page-item"><a class="colorheader page-link bg-danger" href="/index.html">Cerrar sesión</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -41,7 +39,7 @@
         </div>
     </div>
     <!--Contenido principal-->
-    <div class="mx-4">
+    <div class="px-4">
         <div class="row border my-3 px-3 py-3">
             <div class="col-2 text-end">
                 <img src="/Photos/default-avatar.png" height="100" width="100"/>
@@ -52,7 +50,7 @@
             <h6>Email: user@example.com</h6>
             </div>
             <div class="col-2 text-end">
-                <a href="/index.html">
+                <a href="/indexlogeado.html">
                     <button type="button" class="btn btn-danger">Cerrar</button>
                 </a>
             </div>
@@ -66,9 +64,9 @@
                         <div class="row">
                             <div class="col-8">
                                 <div class="mb-3">Nombre</div>
-                                <div class="mb-4"><input class="form-control" type="text" value="Nombre"/></div>
+                                <div class="mb-4"><input class="form-control" type="text" value="Rocio"/></div>
                                 <div class="mb-3">Apellidos</div>
-                                <div class="mb-2"><input class="form-control" type="text" value="Apellidos"/></div>
+                                <div class="mb-2"><input class="form-control" type="text" value="Malca Hernández"/></div>
                             </div>
                             <div class="col text-center">
                                 <div class="mb-2 fs-sm">Foto de perfil</div>
@@ -182,14 +180,14 @@
         <div class="card-header border-0">
             <div class="row mt-2">
                 <div class="col-1 text-center"> 
-                    <a href="/indexlogin.html">
+                    <a href="/indexlogeado.html">
                         <img src="/Photos/Logo3.png" width="35" height="35"/>
                     </a>
                 </div>
                 <div class="col-6 fs-sm">
                     <nav aria-label="...">
                         <ul class="pagination">
-                            <li class="page-item"><a class="page-link" href="/indexlogin.html">Inicio</a></li>
+                            <li class="page-item"><a class="page-link" href="/indexlogeado.html">Inicio</a></li>
                             <li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
                             <li class="page-item"><a class="page-link" href="#">Acerca</a></li>
                             <li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
