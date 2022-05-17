@@ -4,7 +4,6 @@ const guardarCita = () => {
     citas.push({ hora: horaFinal, dia: diaFinal });
     console.log(citas);
     localStorage.setItem('Horarios', JSON.stringify(citas));
-    alert("Cita guardada");
 }
 
 const saveHorario = (hora, dia) => {
