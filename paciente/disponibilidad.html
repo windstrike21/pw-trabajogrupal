@@ -10,32 +10,42 @@
 </head>
 
 <body>
-    <header id="header" class="fixed-top border-bottom">
-        <ul class="nav bg-light">
-            <li class="nav-item">
-                <a class="navbar-item" href="pacienteindex.html">
-                    <img src="/pw-trabajogrupal/paciente/imagenes/Logo3P.png" href="/pw-trabajogrupal/paciente/pacienteindex.html" width="35" height="35" />
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Staff Médico</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Horario Médico</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="pacientemiscitas.html">Mis citas</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/pw-trabajogrupal/paciente/pacienterecomendaciones.html">Recomendaciones</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/pw-trabajogrupal/paciente/pacienteperfil.html">Editar</a>
-              </li>
-        </ul>
-    </header>
-
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a href="/pw-trabajogrupal/paciente/pacienteindex.html" class="navbar-brand">
+                <img src="/pw-trabajogrupal/paciente/imagenes/Logo3P.png" height="32" alt="CoolBrand">
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                  <ul class="nav nav-tabs bg-light">          
+                          
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="/pw-trabajogrupal/paciente/pacienteindex.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="#">Staff Médico</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Horario Médico</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pw-trabajogrupal/paciente/pacientemiscitas.html">Mis Citas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pw-trabajogrupal/paciente/pacienterecomendaciones.html">Recomendaciones</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/pw-trabajogrupal/paciente/pacienteperfil.html">Perfil</a>
+                    </li>
+                  </ul>
+                </div>
+                
+            </div>
+        </div>
+    </nav>
     <!--Contenido principal-->
     <div class="container-fluid mt-5 py-3">
         <div class="card mb-3">
