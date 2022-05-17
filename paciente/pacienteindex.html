@@ -13,16 +13,16 @@
   
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barra-navegacion" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon">
+        <a class="navbar-item" href="#">
+          <img src="/pw-trabajogrupal/paciente/imagenes/Logo3P.png" alt="" width="35" height="35">
+        </a>
+      </span>
     </button>
       <div class="collapse navbar-collapse" id="barra-navegacion">
       
-       <ul class="nav nav-tabs bg-light">
-            <li class="nav-item mr-1">
-              <a class="navbar-item" href="#">
-                <img src="/pw-trabajogrupal/paciente/imagenes/Logo3P.png" alt="" width="35" height="35">
-              </a>
-            </li>
+       <ul class="nav nav-tabs bg-light">          
+                        
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="">Inicio</a>
             </li>
@@ -47,8 +47,7 @@
     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="10000">
@@ -60,9 +59,9 @@
                   <h12 class="card-subtitle mb-2 text-muted">Selecciona la especialidad y tipo de atención. Luego haz click en el botón BUSCAR</h12>
                   <div class="card mx-2 my-2">
                   <div class="card-body">
-                    <div class="row">
-                      <div class="col-4">
-                        <select class="form-select mt-2" aria-label="Default select example">
+                    <div class="row ">
+                      <div class="col-lg-4 ">
+                        <select class="form-select" aria-label="Default select example">
                           <option selected>Especialidad</option>
                           <option value="1">Medicina Familiar</option>
                           <option value="2">Medicina Interna</option>
@@ -75,19 +74,19 @@
                         </select>
                       </div>
                       
-                      <div class="col-4 ">
-                        <select class="form-select mt-2" aria-label="Default select example">
+                      <div class="col-lg-4 ">
+                        <select class="form-select" aria-label="Default select example">
                           <option selected>Tipo de atención</option>
                           <option value="1">Virtual</option>
                           <option value="2">Presencial</option>
                         </select>
                       </div>
-                      <div class="col-4">
-                        <a href=""><button class="btn btn-primary mt-2 w-100">BUSCAR</button></a>
+                      <div class="col-lg-4 ">
+                        <a href="/pw-trabajogrupal/paciente/pacientebusqueda.html"><button class="btn btn-primary w-100">BUSCAR</button></a>
                       </div>
                     </div>
                   </div>
-                    <!-- </form> -->
+                    
                   </div>
                 </div>
                 </div>
