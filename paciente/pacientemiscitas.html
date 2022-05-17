@@ -63,8 +63,8 @@
 </div>
 <div class="container-fluid">
     <div class="card px-5 py-5 bg-info bg-opacity-10">
-        <h5 class="card-title text-center mb-5">MIS CITAS</h5>
-        <table class="table-responsive table-bordered border-dark bg-light">
+        <h5 class="card-title text-center mb-5">CITAS PENDIENTES</h5>
+        <table class="table-responsive table-bordered border-dark bg-light mb-5">
             <thead class="table-active bg-dark bg-opacity-50">
                 <tr>
                     <th class="ps-1" scope="col">Médico</th>
@@ -81,7 +81,7 @@
                 <tr>
                     <td class="ps-1">Dr. Juan Carlos</td>
                     <td class="ps-1">Diego Vila</td>
-                    <td class="ps-1"><span id="horario0"></span></td>
+                    <td class="ps-1">23/05/2022 08:00am<span id="horario0"></span></td>
                     <td class="ps-1">Odontología</td>
                     <td class="ps-1"></td>
                     <td class="ps-1"></td>
@@ -92,7 +92,7 @@
                 <tr>
                     <td class="ps-1">Dr. Oscar Goicochea</td>
                     <td class="ps-1">Diego Vila</td>
-                    <td class="ps-1"><span id="horario1"></span></td>
+                    <td class="ps-1">03/06/2022 08:00am<span id="horario1"></span></td>
                     <td class="ps-1">Medicina general</td>
                     <td class="ps-1"></td>
                     <td class="ps-1"></td>
@@ -104,13 +104,62 @@
                 <tr>
                     <td class="ps-1">Dr. Richard Qqueccaño</td>
                     <td class="ps-1">Diego Vila</td>
-                    <td class="ps-1"><span id="horario2"></span></td>
+                    <td class="ps-1">03/06/2022 09:00am<span id="horario2"></span></td>
                     <td class="ps-1">Dermatología</td>
                     <td class="ps-1"></td>
                     <td class="ps-1"></td>
                     <td class="ps-1">Pendiente</td>
                     <td style="text-align:center"><button type="button" class="btn btn-success" data-bs-toggle="modal"
                             data-bs-target="#exampleModal" disabled>Calificar atención</button></td>
+                </tr>
+        <table class="table-responsive table-bordered border-dark bg-light mt-5">
+            <h5 class="card-title text-center mt-5">CITAS ATENDIDAS</h5>
+            <thead class="table-active bg-dark bg-opacity-50">
+                <tr>
+                    <th class="ps-1" scope="col">Médico</th>
+                    <th class="ps-1" scope="col">Paciente</th>
+                    <th class="ps-1" scope="col">Fecha</th>
+                    <th class="ps-1" scope="col">Especialidad</th>
+                    <th class="ps-1" scope="col">Diagnóstico</th>
+                    <th class="ps-1" scope="col">Receta</th>
+                    <th class="ps-1" scope="col">Estado</th>
+                    <th class="ps-1" scope="col">Calificación</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="ps-1">Dr. Juan Carlos</td>
+                    <td class="ps-1">Diego Vila</td>
+                    <td class="ps-1">19/03/2020 12:00pm<span id="horario0"></span></td>
+                    <td class="ps-1">Medicina Interna</td>
+                    <td class="ps-1">Bajo en hemoglobina</td>
+                    <td class="ps-1">Dieta de alimentos altos en hierro</td>
+                    <td class="ps-1">Atendida</td>
+                    <td style="text-align:center"><button type="button" class="btn btn-success" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Calificar atención</button></td>
+                </tr>
+                <tr>
+                    <td class="ps-1">Dr. Oscar Goicochea</td>
+                    <td class="ps-1">Diego Vila</td>
+                    <td class="ps-1">09/11/2021 08:00am<span id="horario1"></span></td>
+                    <td class="ps-1">Traumatología</td>
+                    <td class="ps-1">Fractura Fémur</td>
+                    <td class="ps-1">Cirugía</td>
+                    <td class="ps-1">Atendida</td>
+                    <td style="text-align:center"><button type="button" class="btn btn-success" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Calificar atención</button></td>
+
+                </tr>
+                <tr>
+                    <td class="ps-1">Dr. Eloy Medina</td>
+                    <td class="ps-1">Diego Vila</td>
+                    <td class="ps-1">16/05/2022 12:00pm<span id="horario2"></span></td>
+                    <td class="ps-1">Psiquiatría</td>
+                    <td class="ps-1">Trastorno de ansiedad depresivo</td>
+                    <td class="ps-1">Pastillas antidepresivas</td>
+                    <td class="ps-1">Atendida</td>
+                    <td style="text-align:center"><button type="button" class="btn btn-success" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Calificar atención</button></td>
                 </tr>
                 <!-- Modal -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
