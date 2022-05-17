@@ -38,12 +38,14 @@
         </div>
     </div>
     <div>
-        <h1 class="row d-flex justify-content-center">Editar Perfil</h1>
+        <h1 class="row d-flex justify-content-center">Mi Perfil</h1>
     </div>
 
     <div class="card">
     <div class="card-body">
+      <!--Fila con datos--> 
         <div class="row">
+        <!--1ra columna de 3-->   
         <div class="col-4">
         <!--Nombres-->  
           <div>
@@ -67,11 +69,32 @@
          </div>
     
         </div>
-            <div class="col-4">
+        <!--2da columna de 3-->
+        <div class="col-4">
+          <div>
                 <label class="form-label" for="frm_telf">Número de Teléfono: </label>
-                <input id="fmr_telf" placeholder="" type="text" class="form-control">        
+                <input id="fmr_telf" placeholder="Escribe tu número de teléfono" type="text" class="form-control">
+          </div>
+          <div class="mt-3">
+            <label class="form-label" for="frm_dni">Documento de Identidad: </label>
+            <input id="frm_dni" class="form-control" placeholder="Escribe el número de tu documento de identidad" type="text">        
+          </div>
+          <div class="mt-3">
+            <label class="form-label" for="frm_distrito">Distrito: </label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Seleccione su distrito de residencia</option>
+              <option value="1">Pachacamc</option>
+              <option value="2">Ate</option>
+              <option value="3">La Molina</option>
+            </select>
+            <div class="mt-3">
+              <label class="form-label" for="frm_direccion">Dirección: </label>
+              <input id="frm_direccion" class="form-control" placeholder="Escriba du direccion" type="text">        
             </div>
-            
+          </div>
+                  
+        </div>
+        
         </div>
     </div>
   </div>
