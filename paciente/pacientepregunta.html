@@ -1,30 +1,38 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html >
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
     <title>Preguntas</title>
   </head>
   <body>
-    <!--navbar-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
+ <!--card--> 
+ <div class="card container-fluid">
+  <!--header-->
+  <div class="card-header">  
+    <div class="container-fluid">    
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">  
+              
           <a href="/pw-trabajogrupal/paciente/pacienteindex.html" class="navbar-brand">
-              <img src="/pw-trabajogrupal/paciente/imagenes/Logo3P.png" height="32" alt="CoolBrand">
-          </a>
-          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-              <span class="navbar-toggler-icon"></span>
+            <img src="/pw-trabajogrupal/paciente/imagenes/Logo3P.png" width="32"height="32" alt="ImagenEmpresa">
+          </a>        
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-              <div class="navbar-nav">
-                <ul class="nav nav-tabs bg-light">          
+        <div class="collapse navbar-collapse" id="navbar">
+          <div class="nav nav-tabs">
+            <ul class="navbar-nav me-auto my-2 my-lg-0">      
                         
                   <li class="nav-item">
                     <a class="nav-link"  href="/pw-trabajogrupal/paciente/pacienteindex.html">Inicio</a>
@@ -48,10 +56,14 @@
               </div>
               
           </div>
-      </div>
-  </nav>
-  <div class="card container-fluid">
-    <div class="card-body">
+        
+      </nav>
+    </div> 
+    </div>  
+  
+  <div class="card-body">
+    <div class="container-fluid">
+      
           <h3> <b> Pregunta al experto </b> </h3>
           <p>Si tienes alguna consulta, no dudes en preguntar <br>                
           </p>
@@ -60,40 +72,49 @@
               <li>Las 24 horas del día</li>
               <li>Y sin costo adicional</li>
           </ul>
-    </div>
-    <div class="row">
+      
+    
       <div class="mb-3">
           <label for="fmr-pregunta" class="form-label">Escribe tu pregunta</label>                      
           <textarea class="form-control" id="fmr-pregunta" rows="3"></textarea>
-        </div>
-    </div>
-    <div>
-        <button type="button" class="btn btn-danger mb-3">Enviar pregunta</button>
+      </div>
+    
+    
+      <button type="button" class="btn btn-danger mb-3">Enviar pregunta</button>
 
-    </div>
-
-</div>
-  <div id="footer" class="card">
-    <div class="card-header border-0">
-        <div class="row mt-2">
-            <div class="col-1 text-center">
-                <img src="/pw-trabajogrupal/paciente/imagenes/Logo3P.png" width="35" height="35" />
-            </div>
-            <div class="col-6 fs-sm">
-                <nav aria-label="...">
-                    <ul class="pagination">
-                        <li class="page-item"><a class="page-link" href="/index.html">Inicio</a></li>
-                        <li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                        <li class="page-item"><a class="page-link" href="#">Acerca</a></li>
-                        <li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                        <li class="page-item"><a class="page-link" href="#">Contacto</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
     </div>
   </div>
-       
-  </body>
-  
-  </html>
+
+  <!--card footer-->
+  <div  class="card-footer" >
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
+         <div class="navbar-nav me-auto my-2 my-lg-0">
+             <ul class="pagination">
+                <li class="page-item mx-2">
+                <a class="page-link" href="/index.html">
+                  <img src="/pw-trabajogrupal/paciente/imagenes/Logo3P.png" width="32"height="32" alt="ImagenEmpresa">
+                </a>
+                </li>
+                
+                
+                </a> 
+            
+                <li class="page-item mx-2"><a class="page-link" href="/index.html">Inicio</a></li>
+                    
+                <li class="page-item mx-2"><a class="page-link" href="#">Acerca</a></li>
+                    
+                <li class="page-item mx-2"><a class="page-link" href="#">Contacto</a></li>
+                </ul>
+            
+        </div>
+      </nav>
+     
+        </div>
+       </div>
+    </div>
+
+           
+</body>
+</html>
+ 
